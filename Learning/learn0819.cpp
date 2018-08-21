@@ -53,6 +53,7 @@ int main()
                 将i城市入队，转机次数+1
                 queCity.push({i,queCity.front().second+1});
                 sign[i] = 1;
+                //到达目的地，则结束
                 if(i==endCity)
                 {
                     cout<<queCity.back().second<<endl;
