@@ -1,0 +1,14 @@
+# depslib dependency file v1.0
+1535642990 source:c:\myfiles\work\cplusplus\algorithm\src\seqlist.cpp
+	"SeqList.h"
+
+1535642988 c:\myfiles\work\cplusplus\algorithm\include\seqlist.h
+	<iostream>
+
+1535642807 source:c:\myfiles\work\cplusplus\algorithm\main.cpp
+	<iostream>
+	"src\SeqList.cpp"
+
+1535642990 c:\myfiles\work\cplusplus\algorithm\src\seqlist.cpp
+	"SeqList.h"
+

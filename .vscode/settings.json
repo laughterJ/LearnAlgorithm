@@ -11,7 +11,9 @@
         "[c]": {
             "editor.quickSuggestions": true
         },
-        "xiosbase": "cpp"
+        "xiosbase": "cpp",
+        "xlocale": "cpp",
+        "xlocnum": "cpp"
     },
     "files.autoGuessEncoding": true,
     "C_Cpp.errorSquiggles": "Disabled",
