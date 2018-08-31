@@ -84,6 +84,18 @@ void SeqList<T>::ele_insert(int loca,T data)
     Length++;
 }
 
+//查询顺序表中是否存在某个元素,存在则返回下标（存在多个返回第一个），不存在则返回-1
+template<class T>
+int SeqList<T>::ele_locate(T data)
+{
+    for(int i=1;i<=Length;i++)
+    {
+        if(Data[i] == data)
+            return i;
+    }
+    return -1;
+}
+
 //对顺序表排序
 template<class T>
 void SeqList<T>::sort_list()
@@ -101,6 +113,7 @@ void SeqList<T>::sort_list()
         }
     }
 }
+
 
 
 

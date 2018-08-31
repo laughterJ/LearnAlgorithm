@@ -16,6 +16,7 @@ class SeqList
         int get_length();
         void ele_delete(int loca);
         void ele_insert(int loca,T data);
+        int ele_locate(T data);
         void sort_list();
 
 
