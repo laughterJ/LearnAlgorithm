@@ -1,14 +1,23 @@
 # depslib dependency file v1.0
-1535642990 source:c:\myfiles\work\cplusplus\algorithm\src\seqlist.cpp
+1535682466 source:c:\myfiles\work\cplusplus\algorithm\src\seqlist.cpp
 	"SeqList.h"
 
-1535642988 c:\myfiles\work\cplusplus\algorithm\include\seqlist.h
+1535682467 c:\myfiles\work\cplusplus\algorithm\include\seqlist.h
 	<iostream>
 
-1535642807 source:c:\myfiles\work\cplusplus\algorithm\main.cpp
+1535812080 source:c:\myfiles\work\cplusplus\algorithm\main.cpp
 	<iostream>
 	"src\SeqList.cpp"
+	"src\LinkList.cpp"
 
-1535642990 c:\myfiles\work\cplusplus\algorithm\src\seqlist.cpp
+1535682466 c:\myfiles\work\cplusplus\algorithm\src\seqlist.cpp
 	"SeqList.h"
+
+1535812240 source:c:\myfiles\work\cplusplus\algorithm\src\linklist.cpp
+	"LinkList.h"
+
+1535811722 c:\myfiles\work\cplusplus\algorithm\include\linklist.h
+
+1535812240 c:\myfiles\work\cplusplus\algorithm\src\linklist.cpp
+	"LinkList.h"
 
