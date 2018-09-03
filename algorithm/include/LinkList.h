@@ -7,6 +7,7 @@ struct Node{
     Node<T>* Next;
 };
 
+
 template<class T>
 class LinkList
 {

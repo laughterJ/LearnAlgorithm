@@ -1,6 +1,6 @@
 #include "LinkList.h"
 
-
+//默认构造函数
 template<class T>
 LinkList<T>::LinkList()
 {
@@ -8,7 +8,7 @@ LinkList<T>::LinkList()
     Head->Next = nullptr;
 }
 
-
+//带参构造函数
 template<class T>
 LinkList<T>::LinkList(T* data, int len)
 {
@@ -25,7 +25,7 @@ LinkList<T>::LinkList(T* data, int len)
     }
 }
 
-
+//析构函数
 template<class T>
 LinkList<T>::~LinkList()
 {
