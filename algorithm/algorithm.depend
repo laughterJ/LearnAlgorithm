@@ -32,3 +32,25 @@
 1535682467 d:\work\cplusplus\algorithm\include\seqlist.h
 	<iostream>
 
+1536023878 source:d:\myfiles\work\cplusplus\algorithm\main.cpp
+	<iostream>
+	"src\SeqList.cpp"
+	"src\LinkList.cpp"
+
+1535980920 d:\myfiles\work\cplusplus\algorithm\src\seqlist.cpp
+	"SeqList.h"
+
+1535980920 d:\myfiles\work\cplusplus\algorithm\include\seqlist.h
+	<iostream>
+
+1535980920 d:\myfiles\work\cplusplus\algorithm\src\linklist.cpp
+	"LinkList.h"
+
+1535980920 d:\myfiles\work\cplusplus\algorithm\include\linklist.h
+
+1535980920 source:d:\myfiles\work\cplusplus\algorithm\src\linklist.cpp
+	"LinkList.h"
+
+1535980920 source:d:\myfiles\work\cplusplus\algorithm\src\seqlist.cpp
+	"SeqList.h"
+
