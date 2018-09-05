@@ -34,9 +34,11 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
+		<Unit filename="include/DouLinkList.h" />
 		<Unit filename="include/LinkList.h" />
 		<Unit filename="include/SeqList.h" />
 		<Unit filename="main.cpp" />
+		<Unit filename="src/DouLinkList.cpp" />
 		<Unit filename="src/LinkList.cpp" />
 		<Unit filename="src/SeqList.cpp" />
 		<Extensions>
