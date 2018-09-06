@@ -53,18 +53,9 @@ int SeqList<T>::get_length()
     return Length;
 }
 
-//删除指定位置元素
-template<class T>
-void SeqList<T>::ele_delete(int loca)
-{
-    for(int i=loca;i<Length;i++)
-        Data[i] = Data[i+1];
-    Length--;
-}
-
 //向指定位置插入元素
 template<class T>
-void SeqList<T>::ele_insert(int loca,T data)
+void SeqList<T>::ele_insert(T data, int loca)
 {
     if(loca>Length+1)
         throw "out of size";
@@ -84,6 +75,17 @@ void SeqList<T>::ele_insert(int loca,T data)
     Length++;
 }
 
+//删除指定位置元素
+template<class T>
+void SeqList<T>::ele_delete(int loca)
+{
+    if(loca<1 || loca>Length)
+        throw"out of size";
+    for(int i=loca;i<Length;i++)
+        Data[i] = Data[i+1];
+    Length--;
+}
+
 //查询顺序表中是否存在某个元素,存在则返回下标（存在多个返回第一个），不存在则返回-1
 template<class T>
 int SeqList<T>::ele_locate(T data)
@@ -94,6 +96,15 @@ int SeqList<T>::ele_locate(T data)
             return i;
     }
     return -1;
+}
+
+//修改顺序表中指定元素的值
+template<class T>
+void SeqList<T>::ele_modify(T data, int loca)
+{
+    if(loca<1 || loca>Length)
+        throw"out of size";
+    Data[loca] = data;
 }
 
 //对顺序表排序
