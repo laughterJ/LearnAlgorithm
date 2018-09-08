@@ -1,6 +1,6 @@
 #include "LinkList.h"
 
-//Ä¬ÈÏ¹¹Ôìº¯Êı
+//é»˜è®¤æ„é€ å‡½æ•°
 template<class T>
 LinkList<T>::LinkList()
 {
@@ -8,7 +8,7 @@ LinkList<T>::LinkList()
     Head->Next = nullptr;
 }
 
-//´ø²Î¹¹Ôìº¯Êı
+//å¸¦å‚æ„é€ å‡½æ•°
 template<class T>
 LinkList<T>::LinkList(T* data, int len)
 {
@@ -25,7 +25,7 @@ LinkList<T>::LinkList(T* data, int len)
     }
 }
 
-//Îö¹¹º¯Êı
+//ææ„å‡½æ•°
 template<class T>
 LinkList<T>::~LinkList()
 {
@@ -38,14 +38,14 @@ LinkList<T>::~LinkList()
     }
 }
 
-//»ñÈ¡Í·½Úµã
+//è·å–å¤´èŠ‚ç‚¹
 template<class T>
 Node<T>* LinkList<T>::get_head()
 {
     return Head;
 }
 
-//ÏòÖ¸¶¨Î»ÖÃ²åÈëÔªËØ
+//å‘æŒ‡å®šä½ç½®æ’å…¥å…ƒç´ 
 template<class T>
 void LinkList<T>::ele_insert(T data, int posi)
 {
@@ -58,7 +58,7 @@ void LinkList<T>::ele_insert(T data, int posi)
     sign->Next = p;
 }
 
-//É¾³ıÖ¸¶¨Î»ÖÃÔªËØ
+//åˆ é™¤æŒ‡å®šä½ç½®å…ƒç´ 
 template<class T>
 void LinkList<T>::ele_delete(int posi)
 {
@@ -71,7 +71,7 @@ void LinkList<T>::ele_delete(int posi)
     p = nullptr;
 }
 
-//²éÑ¯Ö¸¶¨ÔªËØÊÇ·ñÔÚÁ´±íÖĞ£¬Èô´æÔÚ£¬·µ»ØµÚÒ»¸öµÄÎ»ÖÃ£¬Èô²»´æÔÚ£¬·µ»Ø-1
+//æŸ¥è¯¢æŒ‡å®šå…ƒç´ æ˜¯å¦åœ¨é“¾è¡¨ä¸­ï¼Œè‹¥å­˜åœ¨ï¼Œè¿”å›ç¬¬ä¸€ä¸ªçš„ä½ç½®ï¼Œè‹¥ä¸å­˜åœ¨ï¼Œè¿”å›-1
 template<class T>
 int LinkList<T>::ele_locate(T data)
 {
@@ -87,7 +87,7 @@ int LinkList<T>::ele_locate(T data)
     return -1;
 }
 
-//½«Ö¸¶¨Î»ÖÃÔªËØĞŞ¸ÄÎªÖ¸¶¨Öµ
+//å°†æŒ‡å®šä½ç½®å…ƒç´ ä¿®æ”¹ä¸ºæŒ‡å®šå€¼
 template<class T>
 void LinkList<T>::ele_modify(int posi, T data)
 {
@@ -97,7 +97,7 @@ void LinkList<T>::ele_modify(int posi, T data)
     sign->Data = data;
 }
 
-//»ñÈ¡Á´±íÎ²²¿ÔªËØ
+//è·å–é“¾è¡¨å°¾éƒ¨å…ƒç´ 
 template<class T>
 Node<T>* LinkList<T>::get_back()
 {
@@ -107,7 +107,7 @@ Node<T>* LinkList<T>::get_back()
     return sign;
 }
 
-//ÒÆ¶¯µ½Á´±íÖ¸¶¨Î»ÖÃ
+//ç§»åŠ¨åˆ°é“¾è¡¨æŒ‡å®šä½ç½®
 template<class T>
 Node<T>* LinkList<T>::move_to(int posi)
 {

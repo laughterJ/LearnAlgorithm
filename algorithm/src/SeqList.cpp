@@ -1,6 +1,6 @@
 #include "SeqList.h"
 
-//Ä¬ÈÏ¹¹Ôìº¯Êı
+//é»˜è®¤æ„é€ å‡½æ•°
 template<class T>
 SeqList<T>::SeqList()
 {
@@ -9,7 +9,7 @@ SeqList<T>::SeqList()
     Size = 0;
 }
 
-//´ø²Î¹¹Ôìº¯Êı
+//å¸¦å‚æ„é€ å‡½æ•°
 template<class T>
 SeqList<T>::SeqList(T *Data, int Length, int Size)
 {
@@ -21,7 +21,7 @@ SeqList<T>::SeqList(T *Data, int Length, int Size)
         this->Data[i+1] = Data[i];
 }
 
-//Îö¹¹º¯Êı
+//ææ„å‡½æ•°
 template<class T>
 SeqList<T>::~SeqList()
 {
@@ -32,28 +32,28 @@ SeqList<T>::~SeqList()
     Length = 0;
 }
 
-//»ñÈ¡Ë³Ğò±íÖĞµÄÊı¾İ
+//è·å–é¡ºåºè¡¨ä¸­çš„æ•°æ®
 template<class T>
 T* SeqList<T>::get_data()
 {
     return Data;
 }
 
-//»ñÈ¡Ö¸¶¨Î»ÖÃÊı¾İ
+//è·å–æŒ‡å®šä½ç½®æ•°æ®
 template<class T>
 T SeqList<T>::get_element(int loca)
 {
     return Data[loca];
 }
 
-//»ñÈ¡Ë³Ğò±í³¤¶È
+//è·å–é¡ºåºè¡¨é•¿åº¦
 template<class T>
 int SeqList<T>::get_length()
 {
     return Length;
 }
 
-//ÏòÖ¸¶¨Î»ÖÃ²åÈëÔªËØ
+//å‘æŒ‡å®šä½ç½®æ’å…¥å…ƒç´ 
 template<class T>
 void SeqList<T>::ele_insert(T data, int loca)
 {
@@ -75,7 +75,7 @@ void SeqList<T>::ele_insert(T data, int loca)
     Length++;
 }
 
-//É¾³ıÖ¸¶¨Î»ÖÃÔªËØ
+//åˆ é™¤æŒ‡å®šä½ç½®å…ƒç´ 
 template<class T>
 void SeqList<T>::ele_delete(int loca)
 {
@@ -86,7 +86,7 @@ void SeqList<T>::ele_delete(int loca)
     Length--;
 }
 
-//²éÑ¯Ë³Ğò±íÖĞÊÇ·ñ´æÔÚÄ³¸öÔªËØ,´æÔÚÔò·µ»ØÏÂ±ê£¨´æÔÚ¶à¸ö·µ»ØµÚÒ»¸ö£©£¬²»´æÔÚÔò·µ»Ø-1
+//æŸ¥è¯¢é¡ºåºè¡¨ä¸­æ˜¯å¦å­˜åœ¨æŸä¸ªå…ƒç´ ,å­˜åœ¨åˆ™è¿”å›ä¸‹æ ‡ï¼ˆå­˜åœ¨å¤šä¸ªè¿”å›ç¬¬ä¸€ä¸ªï¼‰ï¼Œä¸å­˜åœ¨åˆ™è¿”å›-1
 template<class T>
 int SeqList<T>::ele_locate(T data)
 {
@@ -98,7 +98,7 @@ int SeqList<T>::ele_locate(T data)
     return -1;
 }
 
-//ĞŞ¸ÄË³Ğò±íÖĞÖ¸¶¨ÔªËØµÄÖµ
+//ä¿®æ”¹é¡ºåºè¡¨ä¸­æŒ‡å®šå…ƒç´ çš„å€¼
 template<class T>
 void SeqList<T>::ele_modify(T data, int loca)
 {
@@ -107,7 +107,7 @@ void SeqList<T>::ele_modify(T data, int loca)
     Data[loca] = data;
 }
 
-//¶ÔË³Ğò±íÅÅĞò
+//å¯¹é¡ºåºè¡¨æ’åº
 template<class T>
 void SeqList<T>::sort_list()
 {
@@ -124,10 +124,3 @@ void SeqList<T>::sort_list()
         }
     }
 }
-
-
-
-
-
-
-
