@@ -51,7 +51,11 @@ void LinkList<T>::ele_insert(T data, int posi)
 {
     Node<T>* sign = Head;
     for(int i=1;i<posi;i++)
+    {
         sign = sign->Next;
+        if(sign == nullptr)
+            throw"out of size";
+    }
     Node<T>* p = new Node<T>;
     p->Data = data;
     p->Next = sign->Next;
@@ -64,7 +68,11 @@ void LinkList<T>::ele_delete(int posi)
 {
     Node<T>* sign = Head;
     for(int i=1;i<posi;i++)
+    {
         sign = sign->Next;
+        if(sign == nullptr)
+            throw"out of size";
+    }
     Node<T>* p = sign->Next;
     sign->Next = p->Next;
     delete p;
@@ -93,7 +101,11 @@ void LinkList<T>::ele_modify(int posi, T data)
 {
     Node<T>* sign = Head;
     for(int i=0;i<posi;i++)
+    {
         sign = sign->Next;
+        if(sign == nullptr)
+            throw"out of size";
+    }
     sign->Data = data;
 }
 
