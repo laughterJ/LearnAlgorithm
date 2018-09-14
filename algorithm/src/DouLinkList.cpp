@@ -23,6 +23,7 @@ DouLinkList<T>::DouLinkList(T* data,int Len)
         p->Data = data[i];
         p->Prior = sign;
         p->Next = sign->Next;
+        sign->Next->Prior = p;
         sign->Next = p;
         sign = p;
     }
