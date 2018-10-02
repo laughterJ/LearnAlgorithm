@@ -1,22 +1,35 @@
-#include<iostream>
-#include<vector>
-using namespace std;
-
-
-
-
-void output(vector<int> array)
+vector<int> mergeSort(vector<int> &array)
 {
-    for(int i=0;i<array.size();i++)
-        cout<<array[i]<<" ";
-    cout<<endl;
+    sort(array,0,array.size()-1);
 }
 
-int main()
+void sort(vector<int> &array,int left,int right)
 {
-    vector<int> array{7,9,3,0,1,5,2,1,6,3};
-    vector<int> res = heapSort(array);
-    output(res);
-    getchar();
-    return 0;
+    if(right>left)
+    {
+        int mid = (left+right)/2;
+        sort(array,left,mid);
+        sort(array,mid+1,right);
+        merge(array,left,mid+1,right);
+    }
+}
+
+void merge(vector<int> &array,int left,int mid,int right)
+{
+    vector<int> temp;
+    int i=left,j=mid;
+    while(i<mid && j<=right)
+    {
+        if(array[i]<array[j])
+            temp.push_back(array[i++]);
+        else
+            temp.push_back(array[j++]);
+    }
+    while(i<mid)
+        temp.push_back(array[i++]);
+    while(j<=right)
+        temp.push_back(array[j++]);
+    int k = 0;
+    while(left<=right)
+        array[left++] = temp[k++];
 }
