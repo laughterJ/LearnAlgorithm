@@ -3,6 +3,10 @@
 #include<stack>
 using namespace std;
 
+/*
+ * 递归求解汉诺塔问题
+*/
+
 vector<stack<int> > P;
 
 void move(int n,int p1,int p2,int p3)
