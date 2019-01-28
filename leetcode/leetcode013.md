@@ -1,4 +1,5 @@
-public static int romanToInt(String s) {
+```java
+public int romanToInt(String s) {
     	int sum = 0;
     	for(int i=0;i<s.length();i++) {
     		switch (s.charAt(i)) {
@@ -54,3 +55,4 @@ public static int romanToInt(String s) {
 		return sum;
     }
 }
+```
