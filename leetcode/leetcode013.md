@@ -2,8 +2,8 @@
 class Solution {
     public int romanToInt(String s) {
         int sum = 0;
-    	for(int i=0;i<s.length();i++) {
-    		switch (s.charAt(i)) {
+        for(int i=0;i<s.length();i++) {
+            switch (s.charAt(i)) {
                 case 'I':
                     if (i+1<s.length() && s.charAt(i+1)=='V') {
                         sum+=4;
@@ -51,9 +51,9 @@ class Solution {
                     break;
                 default:
                     break;
-			}
-    	}
-		return sum;
+            }
+        }
+        return sum;
     }
 }
 ```
