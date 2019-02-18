@@ -1,3 +1,4 @@
+```java
 class Solution {
     public String longestCommonPrefix(String[] strs) {
         if(strs.length == 0){
@@ -15,3 +16,4 @@ class Solution {
         return prefix;
     }
 }
+```
