@@ -1,5 +1,7 @@
 ```java
-// 中心拓展算法
+/** 中心拓展算法
+ *
+ */
 class Solution {
     public String longestPalindrome(String s) {
         if(s == null || s.length() == 0){
