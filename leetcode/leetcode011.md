@@ -16,9 +16,7 @@ class Solution {
         return maxVal;
     }
 }
-```
 
-```java
 /**
  * 方法一优化：不需要每次移动游标都计算
  */
