@@ -1,4 +1,5 @@
 ```java
+
 class Solution {
     int mid = 0;
     int i, j;
