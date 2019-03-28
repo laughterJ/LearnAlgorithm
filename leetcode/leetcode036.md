@@ -4,11 +4,11 @@
  */
 class Solution {
     public boolean isValidSudoku(char[][] board) {
-        // 记录第i（0-8）行是否存在数字j
+        // 记录第i（0-8）行是否存在数字num
         boolean row[][] = new boolean[9][10];
-        // 记录第i（0-8）行是否存在数字j
+        // 记录第j（0-8）列是否存在数字num
         boolean column[][] = new boolean[9][10];
-        // 记录第i（0-8）个3*3小方块是否存在数字j
+        // 记录第k（0-8）个3*3小宫格是否存在数字num
         boolean block[][] = new boolean[9][10];
         int num = 0;
         for(int i = 0; i < 9; i ++){
